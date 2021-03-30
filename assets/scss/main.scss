@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+// Font Variables
+$Open: 'Open Sans', sans-serif;   
+
+body{
+    line-height: 1.5;
+    background: black;
+    font-family: $Open;
+    font-style: normal;
+    font-size: 1rem;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.block {
+    display: block;
+    margin-bottom: 2em;
+    width: 50%;
+    height: 50%;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.menu-button{
+	position:absolute;
+    background-color:transparent;
+    outline:none;
+    border:none;
+	border: 0;
+    padding: 0;
+    top: 57px;
+	left: 62px;
+    width: 33px;
+    height: 20px;
+    z-index: 2;
+    cursor: pointer;
+
+}
+.menu-bars{
+    display:flex;
+    flex-direction:column;
+}
+
+.bar1{
+    background-color:#DAA03DFF;
+    width: 16px;
+    height: 2px;
+    position: relative;
+    margin: 2px 0;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.bar2{
+    background-color:#DAA03DFF;
+    width: 28px;
+    height: 2px;
+    position: relative;
+    margin: 2px 0;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.bar3{
+    background-color:#DAA03DFF;
+    width: 16px;
+    height: 2px;
+    position: relative;
+    left: 16px;
+    margin: 2px 0;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+nav {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #DAA03DFF;
+  transform: translate3d(-100%, 0, 0);
+  z-index: -1;
+}
+
+nav section {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+nav a {
+  font-family: $Open;
+  font-style: normal;
+  font-size: 1.8rem;
+  padding: .5em;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  text-transform: uppercase;
+}
+nav a:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0.2em;
+  background-color: black;
+  bottom: 0.2em;
+  left: 0;
+  z-index: -1;
+  transform: skew(0deg, 0deg);
+  transition: all 200ms ease-out;
+}
+nav a:hover:after {
+  width: 100%;
+}
+
+.hidden{
+  -webkit-clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 0 100%);
+}
+
+.reveal {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.back {
+  -webkit-clip-path: polygon(0 0, 0% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 0% 0, 100% 100%, 0 100%);
+}
+
+.main {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    margin: 0 auto;
+    transform: translate(-50%, -50%);
+    background: black;
+    z-index: 0;
+
+    #content {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        min-height: 24px;
+        height: 100%;
+        position: relative;
+        text-align: center;
+        top: 33%;
+
+        .title {
+            a {
+            color: #DAA03DFF;
+            font-family: $Open;
+            font-size: 4rem;
+            text-transform: uppercase;
+            padding-bottom: 0px;
+            margin-bottom: 0px;
+
+            span {
+                font-size: 4rem;
+            }
+            text-decoration: none;
+            -moz-transition: all 0.2s ease-in;
+            -o-transition: all 0.2s ease-in;
+            -webkit-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
+            &:hover {
+                color: white;
+                cursor: pointer;
+                }
+            }
+        }
+
+        p {
+            color:#DAA03DFF;
+            font-family: $Open;
+            font-size: 1.5rem;
+            margin: 1em;
+            padding: 0;
+            border: #DAA03DFF 1px solid;
+            letter-spacing: 0.5rem;
+            text-transform: uppercase;
+            > a {
+                text-decoration: none;
+                color: inherit;
+                -moz-transition: all 0.2s ease-in;
+                -o-transition: all 0.2s ease-in;
+                -webkit-transition: all 0.2s ease-in;
+                transition: all 0.2s ease-in;
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+hr.one {
+    border: #DAA03DFF solid 1px;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 414px) {
+    .main {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        margin: 0 auto;
+        transform: translate(-50%, -50%);
+        background: black;
+        z-index: 0;
+    
+        #content {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            min-height: 24px;
+            height: 100%;
+            position: relative;
+            text-align: center;
+            top: 33%;
+    
+            .title {
+                color: #DAA03DFF;
+                font-family: $Open;
+                font-size: 2rem;
+                text-transform: uppercase;
+                padding-bottom: 0px;
+                margin-bottom: 0px;
+    
+                span {
+                    font-size: 2rem;
+                }
+            }
+    
+            p {
+                color:#DAA03DFF;
+                font-family: $Open;
+                font-size: 1rem;
+                margin: 1em 4em;
+                padding: 0;
+                border: #DAA03DFF 1px solid;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+                > a {
+                    text-decoration: none;
+                    color: inherit;
+                    -moz-transition: all 0.2s ease-in;
+                    -o-transition: all 0.2s ease-in;
+                    -webkit-transition: all 0.2s ease-in;
+                    transition: all 0.2s ease-in;
+    
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+    
+    hr.one {
+        border: #DAA03DFF solid 1px;
+        margin-bottom: 1.5em;
+        width: 50%
+    }
+}
