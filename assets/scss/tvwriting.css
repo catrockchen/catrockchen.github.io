@@ -441,8 +441,8 @@ video[poster] {
     background: white;
     color: black;
     -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
     grid-area: item2;
     display: none;
   }
@@ -540,7 +540,19 @@ hr {
   text-decoration: none;
   color: black;
 }
-
+.video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
 
 
 /*# sourceMappingURL=story.css.map */
