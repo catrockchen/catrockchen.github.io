@@ -101,7 +101,7 @@ nav {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: black;
+  background-color: #000000;
   -webkit-transform: translate3d(-100%, 0, 0);
           transform: translate3d(-100%, 0, 0);
   z-index: -1;
@@ -151,7 +151,7 @@ nav a:after {
   transition: all 200ms ease-out;
 }
 
-nav a:hover {
+nav a:hover:after {
   width: 100%;
 }
 
