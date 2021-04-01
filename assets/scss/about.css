@@ -242,6 +242,14 @@ hr.one {
   margin-bottom: 2em;
 }
 
+.sectionContent p > a:link {
+    color: black;
+}
+
+.sectionContent p > a:hover {
+    color: indianred;
+}
+
 @media (max-width: 414px) {
   .main {
     position: absolute;
@@ -324,7 +332,7 @@ p {
 .mainDetails {
   padding: 25px 35px;
 	padding-left: 32%;
-  border-bottom: 2px solid black;
+  border-bottom: 0px solid black;
   background: white;
 	
 }
@@ -350,7 +358,7 @@ p {
 }
 
 #headshot {
-  width: 90%;
+  width: 100%;
   float: left;
   margin-right: 50px;
   margin-top: 10px;
@@ -359,7 +367,7 @@ p {
 #headshot img {
   width: 100%;
   height: auto;
-  border-radius: 100px;
+  border-radius: 0px;
 }
 
 #name {
@@ -413,7 +421,7 @@ section:last-child {
 
 .sectionContent {
   float: right;
-  width: 72.5%;
+  width: 66.7%;
 }
 
 .sectionContent p {
