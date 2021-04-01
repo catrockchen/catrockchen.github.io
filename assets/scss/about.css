@@ -323,15 +323,17 @@ p {
 
 .mainDetails {
   padding: 25px 35px;
+	padding-left: 32%;
   border-bottom: 2px solid black;
   background: white;
+	
 }
 
 #name h1 {
   font-size: 2.5em;
   font-weight: 700;
   font-family: "Open Sans", sans-serif;
-  margin-bottom: -6px;
+  margin-bottom: -5px;
   color: black;
 }
 
@@ -348,9 +350,9 @@ p {
 }
 
 #headshot {
-  width: 14.5%;
+  width: 90%;
   float: left;
-  margin-right: 30px;
+  margin-right: 50px;
   margin-top: 10px;
 }
 
@@ -498,6 +500,7 @@ section:last-child {
 }
 
 @media all and (max-width: 601px) {
+	
   #cv {
     width: 95%;
     margin: 10px auto;
@@ -535,12 +538,15 @@ section:last-child {
   cursor: pointer;
   float: none;
 	  
-  }
+  } 
+	.mainDetails {
+	  padding-left: 0;
 }
 
 @media all and (max-width: 480px) {
   .mainDetails {
     padding: 15px 15px;
+	  padding-left: 0;
   }
   section {
     padding: 15px 0 0;
