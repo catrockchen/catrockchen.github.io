@@ -31,9 +31,9 @@ $(function(){
 	function showCloseMenu() {
 		    menuTL.clear();
 		    menuTL
-			.to(bar1, 0.4, { backgroundColor: 000000, x:6, y:6.5, rotation: 225,  transformOrigin:'50% 50%'}, "close")
-			.to(bar2, 0.4, { backgroundColor: 000000,x:0, rotation: 135}, "close")
-			.to(bar3, 0.4, { backgroundColor: 000000, x:-9.7, y:-5.3, rotation: 225, transformOrigin:'50% 50%', onComplete: function() { isChangingState = false; isOpen = true; }}, "close");
+			.to(bar1, 0.4, { backgroundColor: 16777215, x:6, y:6.5, rotation: 225,  transformOrigin:'50% 50%'}, "close")
+			.to(bar2, 0.4, { backgroundColor: 16777215,x:0, rotation: 135}, "close")
+			.to(bar3, 0.4, { backgroundColor: 16777215, x:-9.7, y:-5.3, rotation: 225, transformOrigin:'50% 50%', onComplete: function() { isChangingState = false; isOpen = true; }}, "close");
 	}		
 	function showOpenMenu() {
 		    menuTL.clear();
