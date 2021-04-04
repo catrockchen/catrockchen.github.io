@@ -38,9 +38,9 @@ $(function(){
 	function showOpenMenu() {
 		    menuTL.clear();
 		    menuTL
-             .to(bar2, 0.5, { backgroundColor: 14327869, rotation: 0})
-             .to(bar3, 0.5, { backgroundColor: 14327869, x:-16, y:0, rotation: 0, onComplete: function() { isChangingState = false; isOpen = false;}, delay:-0.5 })
-			 .to(bar1, 0.5, { backgroundColor: 14327869, x:12, y:0, rotation: 0, delay: -0.5});
+             .to(bar2, 0.5, { backgroundColor: 000000, rotation: 0})
+             .to(bar3, 0.5, { backgroundColor: 000000, x:-16, y:0, rotation: 0, onComplete: function() { isChangingState = false; isOpen = false;}, delay:-0.5 })
+			 .to(bar1, 0.5, { backgroundColor: 000000, x:12, y:0, rotation: 0, delay: -0.5});
 	}  	
   menu.onmouseover = function(){
     menuOver();
