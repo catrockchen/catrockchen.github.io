@@ -181,7 +181,7 @@ nav a:hover:after {
 }
 
 .section-header-underline {
-  border: 1px solid black;
+  border: 0px solid black;
   width: 10rem;
   margin: 0 auto;
   margin-bottom: 30px;
