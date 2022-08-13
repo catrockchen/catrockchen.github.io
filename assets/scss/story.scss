@@ -6,7 +6,7 @@ $Open: 'Open Sans', sans-serif;
 body{
     line-height: 1.5;
     background: black;
-    font-family: $Open;
+    font-family:'Courier New', Courier, monospace;
     font-style: normal;
     font-size: 1rem;
     height: 100%;
@@ -104,7 +104,7 @@ nav section {
 }
 
 nav a {
-  font-family: $Open;
+  font-family:'Courier New', Courier, monospace;
   font-style: normal;
   font-size: 1.8rem;
   padding: .5em;
