@@ -120,7 +120,7 @@ nav section {
 }
 
 nav a {
-  font-family: "Open Sans", sans-serif;
+  font-family:'Courier New', Courier, monospace;
   font-style: normal;
   font-size: 1.8rem;
   padding: .5em;
@@ -190,7 +190,7 @@ nav a:hover:after {
 
 .main #content .title a {
   color: #000000;
-  font-family: "Open Sans", sans-serif;
+  font-family:'Courier New', Courier, monospace;
   font-size: 4rem;
   text-transform: uppercase;
   padding-bottom: 0px;
@@ -211,7 +211,7 @@ nav a:hover:after {
 
 .main #content p {
   color: #000000;
-  font-family: "Open Sans", sans-serif;
+  font-family:'Courier New', Courier, monospace;
   font-size: 1.5rem;
   margin: 1em;
   padding: 0;
