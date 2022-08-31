@@ -126,7 +126,7 @@ nav section {
 }
 
 nav a {
-  font-family: "Open Sans", sans-serif;
+  font-family:'Courier New', Courier, monospace;
   font-style: normal;
   font-size: 1.8rem;
   padding: .5em;
